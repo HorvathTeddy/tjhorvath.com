@@ -9,8 +9,7 @@ import { HeroContainer, HeroBg, VideoBg,
         } from './HeroElements'
 import Earth from '../../images/earth.jpg'
 //import Video from '../../videos/video.mp4'
-//import { Button } from '../ButtonElement'
-
+import { Button } from '../ButtonElements'
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
 
@@ -31,7 +30,7 @@ const HeroSection = () => {
                 C.S. Undergrad
             </HeroP>
             <HeroBtnWrapper>
-                <Button to='/createaccount' onMouseEnter={onHover} onMouseLeave={onHover}  >
+                <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover}  >
                     \/ {hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
             </HeroBtnWrapper>
