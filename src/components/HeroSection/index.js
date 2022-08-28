@@ -24,14 +24,14 @@ const HeroSection = () => {
         </HeroBg>
         <HeroContent>
             <HeroH1>
-                Hi I'm Teddy!
+                Hello, I'm Teddy!
             </HeroH1>
             <HeroP>
-                C.S. Undergrad
+                A passionate and devoted Computer Science undergrad.
             </HeroP>
             <HeroBtnWrapper>
-                <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover}  >
-                    \/ {hover ? <ArrowForward /> : <ArrowRight />}
+                <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover}  smooth={true} duration={500} spy={true} exact='true' offset={-80} style={{width: '100px', textAlign: 'center'}}>
+                    Learn about me{hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>

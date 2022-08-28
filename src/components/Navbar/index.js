@@ -4,16 +4,34 @@ import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, 
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
+
+  const [scrollNav, setScrollNav] = useState(false)
+    
+    const changeNav = () => {
+        if (window.scrollY >= 80) {
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <Nav>
+        <Nav scrollNav={scrollNav}> 
             <NavbarContainer>
-                <NavLogo to='/' >
+                <NavLogo to='/' onClick={toggleHome}>
                     Teddy Horvath
                 </NavLogo>
-                <MobileIcon >
+                <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
@@ -23,7 +41,7 @@ const Navbar = () => {
                         </NavLinks >
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='projsect' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLinks to='projects' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                             Projects
                         </NavLinks>
                     </NavItem>

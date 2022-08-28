@@ -5,7 +5,7 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-    background: #000; /*${({scrollNav}) => (scrollNav ? '#101522' : 'transparent')};*/
+    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
     margin-top: -8px;
     display: flex;
@@ -15,9 +15,14 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
+    color: ${({scrollNav}) => (scrollNav ? '#ff5349' : '#ff5349')};
 
 @media screen and (max-width: 960) {
     transition: 0.8 all ease
+}
+
+&:hover{
+    background: #000;
 }
 `
 
@@ -86,7 +91,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
  
   &.active {
-      border-top: 6px solid #ff5349;
+      border-bottom: 6px solid #4169e1;
   }
 `
 
@@ -100,7 +105,7 @@ export const NavBtn = styled.nav`
 `
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #FF5349;
+  background: #4169e1;
   white-space: nowrap;
   padding: 10px 22px;
   color: #fff;
@@ -115,6 +120,6 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #FF5349;
+    color: #4169e1;
   }
 `
