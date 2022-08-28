@@ -8,12 +8,12 @@ const Navbar = () => {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <Nav scrollNav={scrollNav}>
+        <Nav>
             <NavbarContainer>
-                <NavLogo to='/' onClick={toggleHome}>
+                <NavLogo to='/' >
                     Teddy Horvath
                 </NavLogo>
-                <MobileIcon onClick={toggle}>
+                <MobileIcon >
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
