@@ -18,28 +18,31 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='mission' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
-                            About
+                        <NavLinks to='about' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            About Me
+                        </NavLinks >
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to='projsect' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            Projects
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='services' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
-                            Services
+                        <NavLinks to='experience' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            Experience
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='discover' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
-                            Discover
+                        <NavLinks to='blog' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            Blog
                         </NavLinks>
                     </NavItem>
-                        <NavBtn>
-                            <NavBtnLink to='/login' style={{background: 'black', border: '#fff solid 1px', borderRadius: '5px', marginRight: '6px'}}>
-                                Sign in
-                            </NavBtnLink>
-                        </NavBtn>
-                        <NavBtn>
-                            <NavBtnLink to='/register' >Create account</NavBtnLink>
-                        </NavBtn> 
+                    <NavItem>
+                        <NavLinks to='contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            Contact
+                        </NavLinks>
+                    </NavItem>
+      
                 </NavMenu>
             </NavbarContainer>
         </Nav>
