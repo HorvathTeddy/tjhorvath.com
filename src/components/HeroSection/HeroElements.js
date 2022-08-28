@@ -61,6 +61,9 @@ export const HeroH1 = styled.div`
     color: #fff;
     font-size: 48px;
     text-align: center;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
 
     @media screen and (max-width: 768px) {
         font-size: 40px;
@@ -69,13 +72,32 @@ export const HeroH1 = styled.div`
     @media screen and (max-width: 480px) {
         font-size: 32px;
     }
+
+    &:hover
+    {
+        transform: scale(1.1);
+        animation-name: bounce;
+        animation-timing-function: ease;
+        @keyframes bounce 
+        {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-25px); }
+            100% { transform: translateY(0); }
+        }
+    }
 `
+
+
+
 export const HeroP = styled.p`
     margin-top: 24px;
     color: #fff;
     font-size: 24px;
     text-align: center;
     max-width: 600px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
 
     @media screen and (max-width: 768px) {
         font-size: 24px;
@@ -83,6 +105,18 @@ export const HeroP = styled.p`
 
     @media screen and (max-width: 480px) {
         font-size: 18px;
+    }
+
+    &:hover
+    {
+        transform: scale(1.05);
+        animation-name: bounce;
+        animation-timing-function: ease;
+        @keyframes bounce {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-25px); }
+            100% { transform: translateY(0); }
+}
     }
 `
 
@@ -101,4 +135,18 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
+`
+
+export const SelfieContainer = styled.div`
+    display: flex;
+
+`
+
+export const SelfieImg = styled.img`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover; 
+    object-fit: cover;
+    background: #000;
+    align-items: left;
 `

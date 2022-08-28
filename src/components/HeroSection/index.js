@@ -5,9 +5,13 @@ import { HeroContainer, HeroBg, VideoBg,
     HeroBtnWrapper,
     ArrowForward,
     ArrowRight,
-    HeroContent
+    HeroContent,
+    SelfieContainer,
+    SelfieImg
         } from './HeroElements'
 import Earth from '../../images/earth.jpg'
+import Selfie from '../../images/selfie.png'
+
 //import Video from '../../videos/video.mp4'
 import { Button } from '../ButtonElements'
 const HeroSection = () => {
@@ -23,6 +27,9 @@ const HeroSection = () => {
             <VideoBg src={Earth} type='image/jpg' />
         </HeroBg>
         <HeroContent>
+            <SelfieContainer>
+                <SelfieImg src={Selfie} type='image/png'/>
+            </SelfieContainer>
             <HeroH1>
                 Hello, I'm Teddy!
             </HeroH1>
