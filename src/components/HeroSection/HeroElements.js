@@ -138,15 +138,15 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 `
 
 export const SelfieContainer = styled.div`
-    display: flex;
+    width: 100px;
+    display: inline-flex;
 
 `
 
 export const SelfieImg = styled.img`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover; 
-    object-fit: cover;
-    background: #000;
-    align-items: left;
+    margin: auto 5px;
+    float: left;
+    width: 150px;
+    height: 38px;
+    left: 50%;
 `

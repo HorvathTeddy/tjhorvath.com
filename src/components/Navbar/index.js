@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { FaBars } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
+import Selfie from '../../images/selfie.png'
 
 const Navbar = ({ toggle }) => {
 
@@ -28,6 +29,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}> 
             <NavbarContainer>
+                <img className='selfie-img' src={Selfie} style={{ width: '66px', height: '66px', border: '2px solid #fff', borderRadius: '50%', position: 'sticky', alignItems: 'center', justifyContent: 'center', display: 'flex'}}></img>
                 <NavLogo to='/' onClick={toggleHome}>
                     Teddy Horvath
                 </NavLogo>
