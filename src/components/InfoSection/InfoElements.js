@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
     color: #fff;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
+        linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -56,6 +58,8 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 50px;
+    position: sticky;
+    z-index: 1;
 `
 
 export const Heading = styled.h1`
@@ -65,6 +69,8 @@ export const Heading = styled.h1`
     font-weight: 75;
     color: #152238;
     margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -78,6 +84,9 @@ export const Subtitle = styled.p`
     line-height: auto;
     color: #152238;
     padding: 5px;
+    position: relative;
+    z-index: 1;
+
 `
 
 export const BtnWrap = styled.div`

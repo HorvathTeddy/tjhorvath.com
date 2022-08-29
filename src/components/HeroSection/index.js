@@ -34,7 +34,7 @@ const HeroSection = () => {
   return (
     <HeroContainer id='home'>
         <HeroBg>
-            <VideoBg src={Earth} type='image/jpg'></VideoBg>  
+            {/* <VideoBg src='' type='image/jpg'></VideoBg>   */}
         </HeroBg>
         <TechStackContainer>
             <TechStack> 
