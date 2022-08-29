@@ -7,33 +7,41 @@ ProjectsCard,
 ProjectsIcon,
 ProjectsH2,
 ProjectsP } from './ProjectElements'
-import Icon1 from '../../images/svg-2.svg'
+import vasnip from '../../images/vasnip.jpeg'
 import Icon2 from '../../images/svg-1.svg'
 import Icon3 from '../../images/svg-3.svg'
+import HoverVideoPlayer from "react-hover-video-player";
+import PausedOverlay from "./PausedOverlay";
+import LoadingOverlay from "./LoadingOverlay";
+import vavid from '../../videos/va.mov'
 
 const projects = () => {
   return (
     <ProjectsContainer id='projects'>
         <ProjectsH1>
-            Our Projects
+            Check out a few of my projects
         </ProjectsH1>
         <ProjectsWrapper>
             <ProjectsCard>
-                <ProjectsIcon src={Icon1}/>
+            <HoverVideoPlayer
+                videoSrc={vavid}
+                pausedOverlay={<PausedOverlay />}
+                loadingOverlay={<LoadingOverlay />}
+            />
                 <ProjectsH2>
-                    Artists
+                    <a style={{textDecoration: 'none', color: 'red'}} href='https://github.com/HorvathTeddy/virtual-assistant'>AI digital assistant</a>
                 </ProjectsH2>
                 <ProjectsP>
-                    We help you find artists.
+                    Written in python utilizing pyttsx3, speechRecognition, and requests.
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>
                 <ProjectsIcon src={Icon2}/>
                 <ProjectsH2>
-                    Music
+                <a style={{textDecoration: 'none', color: 'red'}} href='https://github.com/HorvathTeddy/Sync'>Music Collaboration Application</a>
                 </ProjectsH2>
                 <ProjectsP>
-                    Search music uploaded by other artists.
+                    Written in react utilizing react-router, react-scroll, django, and firebase
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>

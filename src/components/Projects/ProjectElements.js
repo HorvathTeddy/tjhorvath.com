@@ -55,15 +55,16 @@ export const ProjectsCard = styled.div`
     }
 `
 
-export const ProjectsIcon = styled.img`
+export const ProjectsIcon = styled.video`
     height: 160px;
     width: 160px;
     margin-bottom: 64px;
+
 ` 
 
 export const ProjectsH1 = styled.h1`
     font-size: 2.5rem;
-    color: #fff;
+    color: #000;
     margin-bottom: 64px;
    
     padding: 50px 50px 50px 50px;
