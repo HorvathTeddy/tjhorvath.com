@@ -43,6 +43,7 @@ export const VideoBg = styled.img`
     object-fit: cover;
     background: #000;
     position: relative;
+    z-index: 0;
 
 `
 
@@ -160,6 +161,8 @@ export const TechStackContainer = styled.div`
     grid-gap: 12px;
     padding: 10px;
     color: #fff;
+ 
+
 `
 
 export const TechStack = styled.div`
@@ -168,17 +171,23 @@ export const TechStack = styled.div`
     position: absolute sticky;
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     padding: 10px;
     padding-top: 325px;
-    
 `
 
 export const TechStackImg = styled.img`
     height: 75px;
     width: 75px;
     position: relative;
+    z-index: 2;
+    background-color: #fff;
+
+    &:hover
+    {
+        transform: scale(1.1);
+    }
 
 `
 
