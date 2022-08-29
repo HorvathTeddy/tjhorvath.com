@@ -20,8 +20,8 @@ Img } from './InfoElements'
 const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, btnContent, to}) => {
   return (
     <>
-      <ParticleBackground />
       <InfoContainer id={id}>
+      <ParticleBackground />
         <InfoWrapper>
             <InfoRow imgStart={imgStart}>
                 <Column1>

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
+    display: flex;
     color: #fff;
     background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
         linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
@@ -13,6 +14,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     height: 860px;
+
     width: 100%;
     max-width: 1100px;
     margin-right: auto;

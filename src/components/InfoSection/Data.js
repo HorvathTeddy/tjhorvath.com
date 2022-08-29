@@ -17,7 +17,7 @@ export const homeObjOne =
 
 export const homeObjTwo = 
 {
-    id: 'projects',
+    id: 'experience',
     topLine: '',
     headLine: '',
     description: '',
@@ -30,7 +30,7 @@ export const homeObjTwo =
 
 export const homeObjThree = 
 {
-    id: 'experience',
+    id: 'blog',
     topLine: '',
     headLine: '',
     description: '',
@@ -43,7 +43,7 @@ export const homeObjThree =
 
 export const homeObjFour = 
 {
-    id: 'blog',
+    id: 'contact',
     topLine: 'Earth',
     headLine: '',
     description: '',
@@ -54,17 +54,5 @@ export const homeObjFour =
     to: 'contact'
 }
 
-export const homeObjFive = 
-{
-    id: 'contact',
-    topLine: '',
-    headLine: '',
-    description: '',
-    alt: 'link',
-    imgStart: false,
-    img: CI, 
-    btnContent: 'Discover more',
-    to: '/'
-}
 
 
