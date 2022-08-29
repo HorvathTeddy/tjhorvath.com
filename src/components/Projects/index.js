@@ -7,9 +7,6 @@ ProjectsCard,
 ProjectsIcon,
 ProjectsH2,
 ProjectsP } from './ProjectElements'
-import vasnip from '../../images/vasnip.jpeg'
-import Icon2 from '../../images/svg-1.svg'
-import Icon3 from '../../images/svg-3.svg'
 import HoverVideoPlayer from "react-hover-video-player";
 import PausedOverlay from "./PausedOverlay";
 import LoadingOverlay from "./LoadingOverlay";
@@ -23,11 +20,11 @@ const projects = () => {
         </ProjectsH1>
         <ProjectsWrapper>
             <ProjectsCard>
-            <HoverVideoPlayer
-                videoSrc={vavid}
-                pausedOverlay={<PausedOverlay />}
-                loadingOverlay={<LoadingOverlay />}
-            />
+                <HoverVideoPlayer
+                    videoSrc={vavid}
+                    pausedOverlay={<PausedOverlay />}
+                    loadingOverlay={<LoadingOverlay />}
+                />
                 <ProjectsH2>
                     <a style={{textDecoration: 'none', color: 'red'}} href='https://github.com/HorvathTeddy/virtual-assistant'>AI digital assistant</a>
                 </ProjectsH2>
@@ -36,16 +33,24 @@ const projects = () => {
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>
-                <ProjectsIcon src={Icon2}/>
+                <HoverVideoPlayer
+                    videoSrc={vavid}
+                    pausedOverlay={<PausedOverlay />}
+                    loadingOverlay={<LoadingOverlay />}
+                />
                 <ProjectsH2>
-                <a style={{textDecoration: 'none', color: 'red'}} href='https://github.com/HorvathTeddy/Sync'>Music Collaboration Application</a>
+                    <a style={{textDecoration: 'none', color: 'red'}} href='https://github.com/HorvathTeddy/Sync'>Music Collaboration Application</a>
                 </ProjectsH2>
                 <ProjectsP>
                     Written in react utilizing react-router, react-scroll, django, and firebase
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>
-                <ProjectsIcon src={Icon3}/>
+                <HoverVideoPlayer
+                videoSrc={vavid}
+                pausedOverlay={<PausedOverlay />}
+                loadingOverlay={<LoadingOverlay />}
+            />
                 <ProjectsH2>
                     Messaging
                 </ProjectsH2>
