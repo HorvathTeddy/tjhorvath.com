@@ -183,6 +183,7 @@ export const TechStackImg = styled.img`
     position: relative;
     z-index: 2;
     background-color: #fff;
+    border-radius: 50%;
 
     &:hover
     {
