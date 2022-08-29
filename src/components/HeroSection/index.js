@@ -6,8 +6,13 @@ import { HeroContainer, HeroBg, VideoBg,
     ArrowForward,
     ArrowRight,
     HeroContent,
+    TechStackContainer,
+    TechStack,
+    TechStackImg
+
         } from './HeroElements'
 import Earth from '../../images/earth.jpg'
+import CI from '../../images/CI.jpg'
 
 //import Video from '../../videos/video.mp4'
 import { Button } from '../ButtonElements'
@@ -21,8 +26,19 @@ const HeroSection = () => {
   return (
     <HeroContainer id='home'>
         <HeroBg>
-            <VideoBg src={Earth} type='image/jpg' />
+            <VideoBg src={Earth} type='image/jpg'></VideoBg>  
         </HeroBg>
+        <TechStackContainer>
+            <TechStack> 
+                <TechStackImg src={CI} type='image/jpg' />
+                <TechStackImg src={CI} type='image/jpg' />
+                <TechStackImg src={CI} type='image/jpg' />
+                <TechStackImg src={CI} type='image/jpg' />
+                <TechStackImg src={CI} type='image/jpg' />
+                <TechStackImg src={CI} type='image/jpg' />
+            </TechStack>
+            My Technology Stack
+        </TechStackContainer>
         <HeroContent>
             <HeroH1>
                 Hello, I'm Teddy!

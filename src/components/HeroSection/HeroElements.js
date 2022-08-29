@@ -26,7 +26,7 @@ export const HeroContainer = styled.div`
 `
 
 export const HeroBg = styled.div`
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
@@ -42,6 +42,8 @@ export const VideoBg = styled.img`
     -o-object-fit: cover; 
     object-fit: cover;
     background: #000;
+    position: relative;
+
 `
 
 export const HeroContent = styled.div`
@@ -148,5 +150,37 @@ export const SelfieImg = styled.img`
     float: left;
     width: 150px;
     height: 38px;
-    left: 50%;
 `
+
+export const TechStackContainer = styled.div`
+    width: 500px;
+    height: 300px;
+    position: absolute; 
+    display: grid;
+    grid-gap: 12px;
+    padding: 10px;
+    color: #fff;
+`
+
+export const TechStack = styled.div`
+    width: auto;
+    margin: auto;
+    position: absolute sticky;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    padding-top: 325px;
+    
+`
+
+export const TechStackImg = styled.img`
+    height: 75px;
+    width: 75px;
+    position: relative;
+
+`
+
+
+
