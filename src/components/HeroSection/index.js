@@ -13,6 +13,13 @@ import { HeroContainer, HeroBg, VideoBg,
         } from './HeroElements'
 import Earth from '../../images/earth.jpg'
 import CI from '../../images/CI.jpg'
+import CSharp from '../../images/c#-icon.png'
+import DJ from '../../images/django-icon.png'
+import Java from '../../images/java-icon.png'
+import Python from '../../images/python-icon.png'
+import JS from '../../images/js-icon.png'
+import RX from '../../images/react-icon.png'
+
 
 //import Video from '../../videos/video.mp4'
 import { Button } from '../ButtonElements'
@@ -30,12 +37,12 @@ const HeroSection = () => {
         </HeroBg>
         <TechStackContainer>
             <TechStack> 
-                <TechStackImg src={CI} type='image/jpg' />
-                <TechStackImg src={CI} type='image/jpg' />
-                <TechStackImg src={CI} type='image/jpg' />
-                <TechStackImg src={CI} type='image/jpg' />
-                <TechStackImg src={CI} type='image/jpg' />
-                <TechStackImg src={CI} type='image/jpg' />
+                <TechStackImg src={CSharp} type='image/jpg' />
+                <TechStackImg src={DJ} type='image/jpg' />
+                <TechStackImg src={Java} type='image/jpg' />
+                <TechStackImg src={Python} type='image/jpg' />
+                <TechStackImg src={JS} type='image/jpg' />
+                <TechStackImg src={RX} type='image/jpg' />
             </TechStack>
             My Technology Stack
         </TechStackContainer>
