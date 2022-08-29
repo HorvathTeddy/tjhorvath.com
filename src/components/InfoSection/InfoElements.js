@@ -10,7 +10,6 @@ export const InfoContainer = styled.div`
 // info or something
 export const InfoWrapper = styled.div`
     display: grid;
-    z-index: 1;
     height: 860px;
     width: 100%;
     max-width: 1100px;
@@ -18,7 +17,6 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
- 
     `
 
 export const InfoRow = styled.div`
@@ -51,7 +49,7 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
-    color: #fff;
+    color: #152238;
     font-size: 36px;
     line-height: auto;
     font-weight: 1000;
@@ -65,7 +63,7 @@ export const Heading = styled.h1`
     font-size: 32px;
     line-height: 1.1;
     font-weight: 75;
-    color: #fff;
+    color: #152238;
     margin-bottom: 50px;
 
     @media screen and (max-width: 480px) {
@@ -78,7 +76,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 24px;
     line-height: auto;
-    color: #fff;
+    color: #152238;
     padding: 5px;
 `
 

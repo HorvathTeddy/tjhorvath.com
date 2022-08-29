@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../ButtonElements'
+import ParticleBackground from '../ParticleBackground'
 import {
 InfoContainer,
 InfoWrapper,
@@ -19,6 +20,7 @@ Img } from './InfoElements'
 const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, btnContent, to}) => {
   return (
     <>
+      <ParticleBackground />
       <InfoContainer id={id}>
         <InfoWrapper>
             <InfoRow imgStart={imgStart}>
