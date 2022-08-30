@@ -15,7 +15,7 @@ import vavid from '../../videos/va.mov'
 const projects = () => {
   return (
     <ProjectsContainer id='projects'>
-        <ProjectsH1>
+        <ProjectsH1 style={{color: '#000'}}>
             Check out a few of my projects
         </ProjectsH1>
         <ProjectsWrapper>

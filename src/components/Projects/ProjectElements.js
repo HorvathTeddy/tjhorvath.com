@@ -6,6 +6,9 @@ export const ProjectsContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    z-index: 1;
+    color: #000;
 
     @media screen and (max-width: 768px){
         height: 1100px;

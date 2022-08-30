@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
     display: flex;
+    position: sticky;
     color: #fff;
+    z-index: 0;
     background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
         linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
 
@@ -50,6 +52,8 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    position: sticky;
+    z-index: 0;
 `
 
 export const TopLine = styled.p`
@@ -61,7 +65,7 @@ export const TopLine = styled.p`
     text-transform: uppercase;
     margin-bottom: 50px;
     position: sticky;
-    z-index: 1;
+    z-index: 0;
 `
 
 export const Heading = styled.h1`
@@ -71,11 +75,16 @@ export const Heading = styled.h1`
     font-weight: 75;
     color: #152238;
     margin-bottom: 50px;
-    position: relative;
-    z-index: 1;
+    position: sticky;
+    z-index: 0;
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
+    }
+
+    &.hover
+    {
+        transform: scale(1.2)
     }
 `
 
@@ -86,8 +95,8 @@ export const Subtitle = styled.p`
     line-height: auto;
     color: #152238;
     padding: 5px;
-    position: relative;
-    z-index: 1;
+    position: sticky;
+    z-index: 0;
 
 `
 
