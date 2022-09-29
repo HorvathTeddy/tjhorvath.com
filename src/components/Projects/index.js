@@ -4,7 +4,7 @@ ProjectsContainer,
 ProjectsH1,
 ProjectsWrapper,
 ProjectsCard,
-ProjectsIcon,
+ProjectLink,
 ProjectsH2,
 ProjectsP } from './ProjectElements'
 import HoverVideoPlayer from "react-hover-video-player";
@@ -26,7 +26,7 @@ const projects = () => {
                     loadingOverlay={<LoadingOverlay />}
                 />
                 <ProjectsH2>
-                    <a style={{textDecoration: 'none', color: 'red'}} href='https://github.com/HorvathTeddy/virtual-assistant'>AI digital assistant</a>
+                    <ProjectLink href='https://github.com/HorvathTeddy/virtual-assistant'>AI digital assistant</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
                     Written in python utilizing pyttsx3, speechRecognition, and requests.
@@ -39,7 +39,7 @@ const projects = () => {
                     loadingOverlay={<LoadingOverlay />}
                 />
                 <ProjectsH2>
-                    <a style={{textDecoration: 'none', color: 'red'}} href='https://github.com/HorvathTeddy/Sync'>Music Collaboration Application</a>
+                    <ProjectLink href='https://github.com/HorvathTeddy/Sync'>Music Collaboration Application</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
                     Written in react utilizing react-router, react-scroll, django, and firebase
@@ -52,7 +52,7 @@ const projects = () => {
                 loadingOverlay={<LoadingOverlay />}
             />
                 <ProjectsH2>
-                    Messaging
+                    <ProjectLink href='https://github.com/HorvathTeddy/Sync'>Music Collaboration Application</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
                     Secure private messaging.

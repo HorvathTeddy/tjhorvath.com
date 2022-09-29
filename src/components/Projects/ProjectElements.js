@@ -82,9 +82,26 @@ export const ProjectsH1 = styled.h1`
 export const ProjectsH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
+
+    &:hover{
+        background-color: #fff;
+    }
 `
 
 export const ProjectsP = styled.p`
     font-size: 1rem;
     text-align: center;
+`
+
+export const ProjectLink = styled.a`
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid black;
+    border-radius: 33px;
+    background-color: #4169e1;
+
+    &:hover {
+        background-color: white;
+        color: #4169e1;
+    }
 `
