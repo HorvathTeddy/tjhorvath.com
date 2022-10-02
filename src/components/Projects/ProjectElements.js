@@ -9,6 +9,7 @@ export const ProjectsContainer = styled.div`
     position: sticky;
     z-index: 1;
     color: #000;
+    border: 1px solid black;
 
     @media screen and (max-width: 768px){
         height: 1100px;
@@ -52,7 +53,7 @@ export const ProjectsCard = styled.div`
     color: #000;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }

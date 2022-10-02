@@ -11,19 +11,22 @@ import { HeroContainer, HeroBg, VideoBg,
     TechStackImg
 
         } from './HeroElements'
-import Earth from '../../images/earth.jpg'
-import CI from '../../images/CI.jpg'
-import CSharp from '../../images/csharp-icon.png'
-import DJ from '../../images/django-icon.png'
-import JSG from '../../images/javascript-icon-gif.gif'
-import PythonG from '../../images/python-gif.gif'
-import ReactG from '../../images/react-gif.gif'
-import JavaG from '../../images/java-gif.gif'
-import NodeIcon from '../../images/node96-icon.png'
-import FI from '../../images/firebase-icon.png'
-
-//import Video from '../../videos/video.mp4'
+import CSharpI from '../../images/csharp-icon.png'
+import DjangoI from '../../images/django-icon.png'
+import JavascriptI from '../../images/javascript-icon-gif.gif'
+import PythonI from '../../images/python-gif.gif'
+import ReactI from '../../images/react-gif.gif'
+import JavaI from '../../images/java-gif.gif'
+import NodeI from '../../images/node96-icon.png'
+import FirebaseI from '../../images/firebase-icon.png'
 import { Button } from '../ButtonElements'
+
+const AWSI = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg'
+const CplusI = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'
+const HerokuI = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg'
+const MongoI = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'
+const MatlabI = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg'
+
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
 
@@ -38,14 +41,18 @@ const HeroSection = () => {
         </HeroBg>
         <TechStackContainer>
             <TechStack> 
-                <TechStackImg className='techstack-imgs' src={CSharp} type='image/jpg'/>  
-                <TechStackImg src={NodeIcon} type='image/jpg' /> 
-                <TechStackImg src={JavaG} type='image/jpg' />  
-                <TechStackImg src={PythonG} type='image/jpg' /> 
-                <TechStackImg src={JSG} type='image/jpg' />  
-                <TechStackImg src={DJ} type='image/jpg' />  
-                <TechStackImg src={ReactG} type='image/jpg' />  
-                <TechStackImg src={FI} type='image/jpg' />  
+                <TechStackImg className='techstack-imgs' src={CplusI} type='image/jpg'/>  
+                <TechStackImg src={NodeI} type='image/jpg' /> 
+                <TechStackImg src={JavaI} type='image/jpg' />  
+                <TechStackImg src={PythonI} type='image/jpg' /> 
+                <TechStackImg src={JavascriptI} type='image/jpg' />  
+                <TechStackImg src={DjangoI} type='image/jpg' />  
+                <TechStackImg src={ReactI} type='image/jpg' />  
+                <TechStackImg src={FirebaseI} type='image/jpg' />  
+                <TechStackImg src={AWSI} type='image/jpg' />  
+                <TechStackImg src={HerokuI} type='image/jpg' />  
+                <TechStackImg src={MongoI} type='image/jpg' />  
+                <TechStackImg src={MatlabI} type='image/jpg' />  
             </TechStack>
             My Technology Stack
         </TechStackContainer>
@@ -61,6 +68,7 @@ const HeroSection = () => {
                     Learn about me{hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
             </HeroBtnWrapper>
+            <div style={{marginTop: '33px', marginBottom: '-12px'}}>My Technology Stack</div>
         </HeroContent>
     </HeroContainer>
   )

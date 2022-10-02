@@ -11,6 +11,9 @@ import HoverVideoPlayer from "react-hover-video-player";
 import PausedOverlay from "./PausedOverlay";
 import LoadingOverlay from "./LoadingOverlay";
 import vavid from '../../videos/va.mov'
+import svmvid from '../../videos/svm.mp4'
+import syncvid from '../../videos/sync.mp4'
+import { objOne, objTwo } from './ProjectData.js'
 
 const projects = () => {
   return (
@@ -20,39 +23,43 @@ const projects = () => {
         </ProjectsH1>
         <ProjectsWrapper>
             <ProjectsCard>
+                <div>AI digital assitant</div>
                 <HoverVideoPlayer
                     videoSrc={vavid}
                     pausedOverlay={<PausedOverlay />}
                     loadingOverlay={<LoadingOverlay />}
                 />
                 <ProjectsH2>
-                    <ProjectLink href='https://github.com/HorvathTeddy/virtual-assistant'>AI digital assistant</ProjectLink>
+                    <ProjectLink href='https://github.com/HorvathTeddy/virtual-assistant'>View Repository</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
                     Written in python utilizing pyttsx3, speechRecognition, and requests.
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>
+                <div style={{textAlign: 'center'}}>Scotts Valley Magnetics Commercial Website</div>
                 <HoverVideoPlayer
-                    videoSrc={vavid}
-                    pausedOverlay={<PausedOverlay />}
+                    style={{color: 'gray'}} 
+                    videoSrc={svmvid}
+                    pausedOverlay={<PausedOverlay {...objOne}/>}
                     loadingOverlay={<LoadingOverlay />}
                 />
                 <ProjectsH2>
-                    <ProjectLink href='https://github.com/HorvathTeddy/Sync'>Music Collaboration Application</ProjectLink>
+                    <ProjectLink href='https://github.com/HorvathTeddy/Sync'>View Repository</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
                     Written in react utilizing react-router, react-scroll, django, and firebase
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>
+                <div>Music Collaboration Web App</div>
                 <HoverVideoPlayer
-                videoSrc={vavid}
-                pausedOverlay={<PausedOverlay />}
+                videoSrc={syncvid}
+                pausedOverlay={<PausedOverlay {...objTwo}/>}
                 loadingOverlay={<LoadingOverlay />}
             />
                 <ProjectsH2>
-                    <ProjectLink href='https://github.com/HorvathTeddy/Sync'>Music Collaboration Application</ProjectLink>
+                    <ProjectLink href='https://github.com/HorvathTeddy/Sync'>View Repository</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
                     Secure private messaging.

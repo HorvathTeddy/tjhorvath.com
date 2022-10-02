@@ -1,21 +1,8 @@
 import { css } from "@emotion/css";
 import vavid from '../../videos/va.mov'
 
-const PausedOverlay = () => (
+const PausedOverlay = ({ h1, p }) => (
   <div>
-    <img
-      src={vavid}
-      alt="Virtual Assistant Snippet"
-      className={css`
-        /* Thumbnail image expands to cover the player */
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-      `}
-    />
     <div
       className={css`
         /* Ensure the description text is displayed on top of the thumbnail image */
@@ -31,12 +18,12 @@ const PausedOverlay = () => (
           margin: 0 0 0.2em;
         }
         p {
-          margin: 0 0.2em 0;
+          /* margin: 0 0.2em 0; */
+          color: white;
         }
       `}
     >
-      <h1>Big Buck Bunny</h1>
-      <p>Hover to play!</p>
+      <p>{p}</p>
     </div>
   </div>
 );
