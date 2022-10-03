@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-    height: 800px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,8 @@ export const ProjectsContainer = styled.div`
     z-index: 1;
     color: #000;
     border: 1px solid black;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
+        linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
 
     @media screen and (max-width: 768px){
         height: 1100px;
@@ -28,6 +30,7 @@ export const ProjectsWrapper = styled.div`
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
+    margin-bottom: 700px;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -46,14 +49,14 @@ export const ProjectsCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-height: auto;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
     color: #000;
 
     &:hover {
-        transform: scale(1.3);
+        transform: scale(1.1);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
@@ -69,8 +72,6 @@ export const ProjectsIcon = styled.video`
 export const ProjectsH1 = styled.h1`
     font-size: 2.5rem;
     color: #000;
-    margin-bottom: 64px;
-   
     padding: 50px 50px 50px 50px;
     border-radius: 33px;
     
@@ -100,6 +101,7 @@ export const ProjectLink = styled.a`
     border: 3px solid black;
     border-radius: 33px;
     background-color: #4169e1;
+    padding: 6px;
 
     &:hover {
         background-color: white;

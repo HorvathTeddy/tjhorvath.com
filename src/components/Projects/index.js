@@ -13,6 +13,7 @@ import LoadingOverlay from "./LoadingOverlay";
 import vavid from '../../videos/va.mov'
 import svmvid from '../../videos/svm.mp4'
 import syncvid from '../../videos/sync.mp4'
+import uhrvid from '../../videos/uhr.MP4'
 import { objOne, objTwo } from './ProjectData.js'
 
 const projects = () => {
@@ -21,25 +22,24 @@ const projects = () => {
         <ProjectsH1 style={{color: '#000'}}>
             Check out a few of my projects
         </ProjectsH1>
-        <ProjectsWrapper>
+        <ProjectsWrapper style={{height: '100px'}}>
             <ProjectsCard>
-                <div>AI digital assitant</div>
+                <div>Full Stack Delivery App</div>
                 <HoverVideoPlayer
-                    videoSrc={vavid}
+                    videoSrc={uhrvid}
                     pausedOverlay={<PausedOverlay />}
                     loadingOverlay={<LoadingOverlay />}
                 />
                 <ProjectsH2>
-                    <ProjectLink href='https://github.com/HorvathTeddy/virtual-assistant'>View Repository</ProjectLink>
+                    <ProjectLink href='https://github.com/HorvathTeddy/SprintWeed'>View Repository</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
-                    Built with Python and Speech Recognition
+                    Built with React Native and AWS Amplify
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>
                 <div style={{textAlign: 'center'}}>Scotts Valley Magnetics Commercial Website</div>
                 <HoverVideoPlayer
-                    style={{color: 'gray'}} 
                     videoSrc={svmvid}
                     pausedOverlay={<PausedOverlay {...objOne}/>}
                     loadingOverlay={<LoadingOverlay />}

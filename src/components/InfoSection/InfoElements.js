@@ -15,7 +15,7 @@ export const InfoContainer = styled.div`
 // info or something
 export const InfoWrapper = styled.div`
     display: grid;
-    height: 860px;
+    height: 960px;
 
     width: 100%;
     max-width: 1100px;
@@ -69,14 +69,18 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
-    margin-bottom: 24px;
+    /* margin: 16px; */
+    padding: 12px;
     font-size: 32px;
-    line-height: 1.1;
+    line-height: auto;
     font-weight: 75;
-    color: #152238;
-    margin-bottom: 50px;
+    color: #fff;
     position: sticky;
     z-index: 0;
+    background: #152238;
+    border-radius: 33px;
+    height: auto;
+    text-align: center;
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -90,14 +94,16 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
+    /* margin: 32px; */
+    padding: 12px;
     font-size: 24px;
     line-height: auto;
-    color: #152238;
-    padding: 5px;
+    color: #fff;
     position: sticky;
     z-index: 0;
-
+    background: #152238;
+    border-radius: 50px;
+    text-align: center;
 `
 
 export const BtnWrap = styled.div`

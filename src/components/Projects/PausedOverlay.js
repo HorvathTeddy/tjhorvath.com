@@ -1,5 +1,5 @@
 import { css } from "@emotion/css";
-import vavid from '../../videos/va.mov'
+import vavid from '../../videos/uhr.MP4'
 
 const PausedOverlay = ({ h1, p }) => (
   <div>

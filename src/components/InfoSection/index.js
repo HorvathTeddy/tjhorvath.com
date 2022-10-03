@@ -14,10 +14,8 @@ BtnWrap,
 Column2,
 ImgWrap,
 Img } from './InfoElements'
-//import Image1 from '../../images/svg-1.svg'
-//import { homeObjOne } from './Data'
 
-const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, btnContent, to}) => {
+const InfoSection = ({img, id, topLine, headLine, description, description2, alt, imgStart, btnContent, to}) => {
   return (
     <>
       <InfoContainer id={id}>
@@ -34,6 +32,9 @@ const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, bt
                     </Heading>
                     <Subtitle >
                         {description}
+                    </Subtitle>
+                    <Subtitle >
+                        {description2}
                     </Subtitle>
                     <BtnWrap>
                         <Button to={to} smooth={true} duration={500} spy={true} exact="true" offset={-80}>
