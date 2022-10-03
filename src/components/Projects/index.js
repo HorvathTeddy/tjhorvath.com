@@ -33,7 +33,7 @@ const projects = () => {
                     <ProjectLink href='https://github.com/HorvathTeddy/virtual-assistant'>View Repository</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
-                    Written in python utilizing pyttsx3, speechRecognition, and requests.
+                    Built with Python and Speech Recognition
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>
@@ -48,7 +48,7 @@ const projects = () => {
                     <ProjectLink href='https://github.com/HorvathTeddy/Sync'>View Repository</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
-                    Written in react utilizing react-router, react-scroll, django, and firebase
+                    Built with React
                 </ProjectsP>
             </ProjectsCard>
             <ProjectsCard>
@@ -62,7 +62,7 @@ const projects = () => {
                     <ProjectLink href='https://github.com/HorvathTeddy/Sync'>View Repository</ProjectLink>
                 </ProjectsH2>
                 <ProjectsP>
-                    Secure private messaging.
+                    Built with React and Firebase
                 </ProjectsP>
             </ProjectsCard>
         </ProjectsWrapper>
